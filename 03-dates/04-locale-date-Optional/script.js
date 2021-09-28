@@ -11,8 +11,14 @@
 
 (function() {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    const months =["jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Now", "Dec"];
+    const days = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
 
-    // your code here
+    var d = new Date();
+
+    var fdate = days[d.getDay()] + ' ' + d.getDate() + ' ' + months[d.getMonth()] + ' ' + d.getFullYear() + ' ' + d.getHours() + 'h' + d.getMinutes();
+    
+    document.getElementById("target").innerHTML = fdate;
+
 
 })();

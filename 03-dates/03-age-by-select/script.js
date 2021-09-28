@@ -11,6 +11,40 @@
 
 (function() {
 
-    // your code here
+
+    document.getElementById("run").addEventListener('click', Gage)
+    function Gage(){
+        var today = new Date();
+        var Bday = document.getElementById("dob-day").value;
+        var Bmonth = document.getElementById("dob-month").value;
+        var Byear = document.getElementById("dob-year").value;
+        
+        var curday = today.getDate();
+        var curmonth = today.getMonth()+1;
+        var curyear = today.getFullYear();
+    
+        var age = curyear - Byear;
+       /* document.getElementById("run").innerText = age; */
+    
+        if((curmonth < Bmonth) || ( (curmonth == Bmonth) && curday < Bday   )){
+    
+            age--;
+        
+    
+        }
+        document.getElementById("run").innerText = age;
+    
+        
+       
+
+
+
+    }
+
+    
+    
+
+
+
 
 })();
