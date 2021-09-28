@@ -11,6 +11,13 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", Cbg);
+
+    function Cbg()
+    {
+        var color = Math.round(Math.random()*16777215).toString(16);
+       /* alert(color); */
+        document.body.style.backgroundColor = '#' + color;
+    }
 
 })();
