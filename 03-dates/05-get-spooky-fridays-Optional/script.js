@@ -11,6 +11,32 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener('click', numberOfFridaythe13thsIn);
+
+    function numberOfFridaythe13thsIn() {
+        var Uyear =  document.getElementById("year").value;
+        console.log(Uyear);
+        var d = (new Date(Uyear)).getFullYear();
+        console.log(d);
+        var the_months = ["jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]; 
+        var num = [];
+        
+        for(var m = 0; m < 12; m++){
+            let full_d = new Date(Uyear, m , 13)
+            //  d.setFullYear(Uyear, m , 13);
+            console.log(full_d);
+            if(full_d.getDay() == 5) {
+                num.push(m);
+                
+
+            } 
+
+            
+        }
+        console.log(the_months);
+num.forEach(n=>document.getElementById("ym").innerText += the_months[n]+"\n");
+        
+    
+    }
 
 })();

@@ -12,7 +12,7 @@
 (function() {
 
 
-    document.getElementById("run").addEventListener('click', Gage)
+    document.getElementById("run").addEventListener('click', Gage);
     function Gage(){
         var today = new Date();
         var Bday = document.getElementById("dob-day").value;

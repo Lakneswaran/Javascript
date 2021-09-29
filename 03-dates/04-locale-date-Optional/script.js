@@ -16,7 +16,7 @@
 
     var d = new Date();
 
-    var fdate = days[d.getDay()] + ' ' + d.getDate() + ' ' + months[d.getMonth()] + ' ' + d.getFullYear() + ' ' + d.getHours() + 'h' + d.getMinutes();
+    var fdate = days[d.getDay()] + ' ' + d.getDate() + ' ' + months[d.getMonth()] + ' ' + d.getFullYear( ) + ' ' + d.getHours() + 'h' + d.getMinutes();
     
     document.getElementById("target").innerHTML = fdate;
 
