@@ -10,21 +10,46 @@
 // You will have time to focus on it later.
 
 (function() {
-    // to get the value of an input: document.getElementById("element-id").value
-
+    const el1 =  document.getElementById("op-one");
+    const el2 =  document.getElementById("op-two");
+    
     document.getElementById("addition").addEventListener("click", function() {
-        // perform an addition
+        var x = parseInt(el1.value);
+        console.log(x); 
+        var y = parseInt(el2.value);
+        console.log(y);
+        var z = x + y;
+        console.log(z);
+        document.getElementById("result").innerHTML = z;
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
-        // perform an substraction
+        var x = el1.value;
+        console.log(x); 
+        var y = el2.value;
+        console.log(y);
+        var z = x - y;
+        console.log(z);
+        document.getElementById("result").innerHTML = z;
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
-        // perform an multiplication
+        var x = el1.value;
+        console.log(x); 
+        var y = el2.value;
+        console.log(y);
+        var z = x * y;
+        console.log(z);
+        document.getElementById("result").innerHTML = z;
     });
 
     document.getElementById("division").addEventListener("click", function() {
-        // perform an division
+        var x = el1.value;
+        console.log(x); 
+        var y = el2.value;
+        console.log(y);
+        var z = x / y;
+        console.log(z);
+        document.getElementById("result").innerHTML = z;
     });
 })();
