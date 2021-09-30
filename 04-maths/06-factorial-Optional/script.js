@@ -9,14 +9,19 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-    
-    // to get the value of an input: document.getElementById("element-id").value
 
-    document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+   function show(){
 
-    });
-
-})();
+      var number,fact;
+      fact=1;
+      number=Number(document.getElementById("number").value);
+      console.log(number);
+      for(var i = 1;i<=number;i++)
+      {
+          fact=+fact*i;
+  
+      }
+     
+      document.getElementById("number").value = fact;
+  } 

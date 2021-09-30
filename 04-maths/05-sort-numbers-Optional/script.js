@@ -12,10 +12,40 @@
 (function() {
 
     // to get the value of an input: document.getElementById("element-id").value
+   /* const a_num = [];
+    const c_num = [];
+    a_num = document.getElementById("numbers");
+    console.log(a_num);*/
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+      /*  for(var i = 0; i < a_num.length; i++) {
+
+            if(a_num.value[i] < a_num[i+1]){
+                c_num [i] = a_num.value[i];
+            }
+            else{
+                c_num [i] = a_num.value[i];
+            }
+            
+
+
+        }*/
+
+        var num = document.getElementById("numbers").value.split(",");
+        num.sort((a, b) => a - b);
+        console.log(num);
+
+        // document.getElementById('numbers').removeAttribute('readonly');          ==> working
+        document.getElementById("numbers").readOnly = false; 
+
+
+        document.getElementById('numbers').value = num;
+
+         document.getElementById("numbers").readOnly =  true;
+
+
+
 
     });
 
