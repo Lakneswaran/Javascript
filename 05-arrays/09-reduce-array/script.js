@@ -89,6 +89,19 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+
+    
+
+        
+        var sum = people.reduce(function(total, current) {
+            return total + current.age;                     // current is one person; selecting age.
+          }, 0);
+
+          console.log(sum);
+ 
+
+
+    });
 
 })();

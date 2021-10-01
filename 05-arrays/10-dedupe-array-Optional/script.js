@@ -28,5 +28,16 @@
         "cerise",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+
+        let result = (name) => name.filter((v, i) => name.indexOf(v) === i);            
+
+       
+        console.log(result(fruits));
+
+        
+    });
 })();
+
+        // let result = fruits.filter((v, i) => fruits.indexOf(v) === i);
+        // console.log(result);

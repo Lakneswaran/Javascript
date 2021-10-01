@@ -89,6 +89,32 @@
         },
     ];
 
-    // your code here
+
+    document.getElementById("run").addEventListener("click", function() {
+
+        let decidelist = people.filter(function(older){
+
+            return older.age > 18;
+
+        });
+
+        console.log(decidelist);
+
+
+    //     var peoplecopy = people.slice();
+       
+
+
+    //     peoplecopy.forEach(function(element, index) {
+    //        if (element.age < 18) {
+    //            let pos;
+    //         let removedItems = peoplecopy.splice(pos, 3);
+    //            console.log(element, index);
+    //        }
+    //    });
+
+   });    
+
+    
 
 })();

@@ -26,6 +26,24 @@
         "cherry",
     ];
 
-    // your code here
 
+
+    document.getElementById("run").addEventListener("click", function() {
+
+        // const findit = fruits.find(element => "apple");
+
+
+            if(fruits.includes('apple')){
+                console.log("yes")
+            }
+            else{
+                console.log("no");
+            }
+ 
+
+
+    });
 })();
+
+       // console.log(fruits.includes('apple'));      // if the array with apple = true
+        // const findit = fruits.find(element => "apple");
