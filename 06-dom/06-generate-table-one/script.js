@@ -11,6 +11,13 @@
 
 (function() {
 
-    // your code here
+
+    var target = document.getElementById("target");
+    var table = document.createElement("TABLE");
+    target.appendChild(table);
+    for(var i =0; i < 10; i++){
+        table.insertRow(i).innerHTML = i;
+
+    }
 
 })();

@@ -11,6 +11,36 @@
 
 (function() {
 
-    // your code here
+    var passOne =  document.getElementById("pass-one");
+    var passTwo =  document.getElementById("pass-two");
+
+   document.getElementById("run").addEventListener("click", function() {
+
+    if (passOne.value != passTwo.value){
+        
+
+
+    passOne.style.borderColor = "red";
+    passTwo.style.borderColor = "red";
+        
+
+
+        console.log("try again");
+    }
+    else{
+
+     console.log("right");
+     passOne.style.borderColor = "black";
+     passTwo.style.borderColor = "black";
+
+    }
+
+    
+
+
+   });
+
+
+
 
 })();
