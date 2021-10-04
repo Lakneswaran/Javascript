@@ -11,6 +11,12 @@
 
 (function() {
 
-    // your code here
+    const image = document.getElementsByTagName("img")[0];
+    const fixedimage = image.getAttribute("src");
+    const hoverimage = image.getAttribute("data-hover");
+
+    image.onmouseover = () => { image.src = hoverimage; }
+    image.onmouseout = () => { image.src = fixedimage; }
+
 
 })();

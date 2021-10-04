@@ -12,7 +12,7 @@
 (function() {
 
     var numbers = [];
-    console.log(numbers);
+    
 
     document.getElementById("run").addEventListener("click", function() {
 

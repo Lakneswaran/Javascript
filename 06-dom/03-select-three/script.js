@@ -11,6 +11,9 @@
 
 (function() {
 
-    // your code here
+    var change = document.querySelectorAll('.material .target');
+    Array.from(change).forEach(function(changes){
+    changes.textContent = "owned";
+    });
 
 })();

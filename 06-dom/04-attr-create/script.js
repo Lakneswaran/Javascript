@@ -11,6 +11,15 @@
 
 (function() {
 
-    // your code here
+    const srcid = document.getElementById("source"); // access element using id
+    const src = srcid.getAttribute("data-image"); //access element using attribute
+    const to = document.getElementById("target"); //new element by id
+
+    const imgElement = document.createElement("img"); // that creates a new image element
+    imgElement.src=src; //use data image attribute
+
+    target.appendChild(imgElement); // The appendChild() method appends a node as the last child of a node.
+    srcid.remove();
+    
 
 })();
