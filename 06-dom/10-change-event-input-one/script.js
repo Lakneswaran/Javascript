@@ -11,6 +11,32 @@
 
 (function() {
 
-    // your code here
+    
+    var passOne =  document.getElementById("pass-one");
+    passOne.setAttribute("maxlength", "10");
 
+
+
+
+    if (passOne != ){
+
+  
+    
+
+    
+    //.maxLength
+
+        console.log("try again");
+    }
+    else{
+
+     console.log("right");
+
+
+    }
+
+    
+
+
+ 
 })();

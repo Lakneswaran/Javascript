@@ -10,5 +10,30 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    // getPokemon("url");
+
+    // async function getPokemon(url){
+
+        // const response = await fetch(url); 
+        // const pokemon = await response.json();
+        // console.log(pokemon);
+
+        // return pokemon;
+
+        // fetch(url).then((response)) => {
+        //     return response.json();
+        // }).then(pokemon) => {
+        //     console.log(pokemon);
+        //         globalPokemon = pokemon;
+        //         displayPokemon(pokemon)
+        // // }).catch((error) => {
+        //     cpnsole.error("error:", error);
+        // });
+        // second option, but this will give some error. 
+//     }
+
+// }
+        
+
+
 })();
