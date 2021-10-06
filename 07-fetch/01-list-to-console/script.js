@@ -9,31 +9,13 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(() => {
-    // getPokemon("url");
+(() => { 
+    async function getGithubData(){
 
-    // async function getPokemon(url){
+        let data = await fetch('http://localhost:3000/heroes');
+        let main = await data.json();
+        console.log(main);
 
-        // const response = await fetch(url); 
-        // const pokemon = await response.json();
-        // console.log(pokemon);
-
-        // return pokemon;
-
-        // fetch(url).then((response)) => {
-        //     return response.json();
-        // }).then(pokemon) => {
-        //     console.log(pokemon);
-        //         globalPokemon = pokemon;
-        //         displayPokemon(pokemon)
-        // // }).catch((error) => {
-        //     cpnsole.error("error:", error);
-        // });
-        // second option, but this will give some error. 
-//     }
-
-// }
-        
-
-
-})();
+    }
+    getGithubData();
+})()

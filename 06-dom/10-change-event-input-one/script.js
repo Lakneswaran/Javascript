@@ -18,7 +18,7 @@
 
 
 
-    if (passOne != ){
+    if (passOne != 1){
 
   
     
