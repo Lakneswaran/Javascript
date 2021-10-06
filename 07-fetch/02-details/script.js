@@ -23,7 +23,7 @@
             var target = document.getElementById('target');
 
             for(let i = 0; i< main.length;i++){
-            var templet = document.getElementById("tpl-hero").content.cloneNode(true);
+           // var templet = document.getElementById("tpl-hero").content.cloneNode(true);
 
             if(main[i].id == heroID){
                 var list = main[i];
