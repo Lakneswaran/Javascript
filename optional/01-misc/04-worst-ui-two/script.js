@@ -11,6 +11,54 @@
 
 (function() {
 
-    // your code here
+    var target = document.getElementById('target');
+    var btnone = document.getElementById('part-one');
+    var btntwo = document.getElementById('part-two');
+    var btnthree = document.getElementById('part-three');
+    var btnfour = document.getElementById('part-four');
+
+
+
+    var switchbtn =  [btnone, btntwo, btnthree, btnfour];
+
+
+    switchbtn.forEach(btn => {
+
+    btn.addEventListener('click', ( ) => {
+       
+        var add = 0;
+        add = parseInt(btn.innerHTML) + 1;
+        
+
+
+        if(add > btn.getAttribute("data-max")){
+
+            add = btn.getAttribute("data-min");
+            
+        }
+        if(add < 10){
+            btn.innerHTML = "0"+add;
+        }
+        else{
+            btn.innerHTML = add;
+        }
+
+        target.innerHTML = btnone.innerHTML + btntwo.innerHTML + btnthree.innerHTML + btnfour.innerHTML;
+
+        
+
+
+        
+
+    
+        });
+
+
+
+
+
+
+   });
+
 
 })();

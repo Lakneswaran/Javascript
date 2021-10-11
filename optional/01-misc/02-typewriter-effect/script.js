@@ -11,6 +11,31 @@
 
 (function() {
 
-    // your code here
+    var i = 0;
+    var text = []; 
+    text  = document.getElementById("target").textContent;
+   
+    var txt = 'I am Lakneswaran & pursuing Web Developing course';
+    var tt = text + txt;
+    console.log(tt);
+    var speed = 500;
+
+    document.getElementById("target").innerHTML = " ";
+    
+    function typeWriter() {
+        
+      if (i < tt.length) {
+          
+         
+        var saveletter = document.getElementById("target").textContent += tt[i];
+        
+        
+   
+      
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }typeWriter();
+    
 
 })();
